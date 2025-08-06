@@ -1,0 +1,230 @@
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: "JetBrainsMono NFP";
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0px;
+    padding: 0px;
+}
+
+/* @import "theme.css"; */
+
+window#waybar {
+    background: rgb(212, 128, 219); /* фон бара */
+    border-radius: 100px;
+    border: 2px solid #9677aa; 
+    font-size: 1px;
+}
+
+tooltip {
+    background: rgba(216, 170, 216, 0.781);
+    color: #000000;
+    border-radius: 0%;
+    border-width: 100px;
+    border: 2px solid #9677aa; 
+}
+
+#workspaces button {
+    box-shadow: none;
+	text-shadow: none;
+    padding: 0px;
+    border-radius: 7px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 0px;
+    color: #fab1f6;
+    animation: ws_normal 20s ease-in-out 1;
+    
+    
+}
+
+#workspaces button.active {
+    background: rgba(218, 48, 141, 0.829);
+    color: #ffffff;
+    margin-left: 4px;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-right: 4px;
+    animation: ws_active 20s ease-in-out 1;
+    transition: all 0.4s cubic-bezier(0,0.5,0.24,1);
+    border: 2px solid rgba(182, 64, 129, 0.829); 
+    
+}
+
+#workspaces button:hover {
+    background: rgba(235, 81, 176, 0.829);
+    color: #ffffff;
+    animation: ws_hover 20s ease-in-out 1;
+    transition: all 0.3s cubic-bezier(0,0.5,0.24,1);
+     border: 2px solid #9677aa; 
+}
+
+#taskbar button {
+    box-shadow: none;
+	text-shadow: none;
+    padding: 0px;
+    border-radius: 7px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 0px;
+    color: #cfcfcf;
+    animation: ws_normal 20s ease-in-out 1;
+}
+
+#taskbar button.active {
+    background: rgba(189, 189, 189, 0.753);
+    color: #cfcfcf;
+    margin-left: 4px;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-right: 4px;
+    animation: ws_active 20s ease-in-out 1;
+    transition: all 0.4s cubic-bezier(0,0.5,0.24,1);
+     border: 2px solid rgb(189, 189, 189); 
+}
+
+#taskbar button:hover {
+    background: rgb(119, 119, 119);
+    color: #cfcfcf;
+    animation: ws_hover 20s ease-in-out 1;
+    transition: all 0.3s cubic-bezier(0,0.5,0.24,1);
+    border: 2px solid #99959b; 
+    
+}
+
+#tray menu * {
+    min-height: 16px
+}
+
+#tray menu separator {
+    min-height: 10px
+}
+
+#backlight,
+#battery,
+#bluetooth,
+#custom-cava,
+#custom-cliphist,
+#clock,
+#clock,
+#custom-cpuinfo,
+#cpu,
+#custom-display,
+#custom-github_hyde,
+#custom-gpuinfo,
+#custom-hyprsunset,
+#idle_inhibitor,
+#custom-keybindhint,
+#language,
+#memory,
+#mpris,
+#network,
+#custom-notifications,
+#custom-power,
+#privacy,
+#pulseaudio,
+#custom-sensorsinfo,
+#custom-spotify,
+#taskbar,
+#taskbar,
+#taskbar#windows,
+#custom-theme,
+#tray,
+#custom-updates,
+#custom-wallchange,
+#custom-wbar,
+#custom-weather,
+#window,
+#workspaces,
+#workspaces,
+#workspaces,
+#custom-l_end,
+#custom-r_end,
+#custom-sl_end,
+#custom-sr_end,
+#custom-rl_end,
+#custom-stick,
+#custom-rr_end {
+    color: #fca7e6;
+    background: rgb(201, 122, 197);
+    opacity: 1;
+    margin: 4px 0px 4px 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+        border-top: 2px solid #9677aa;     /* Только сверху */
+    border-bottom: 2px solid #9677aa;  /* Снизу — пунктир */
+}
+
+#workspaces,
+#taskbar {
+    padding: 0px;
+}
+
+#custom-r_end {
+    border-radius: 0px 50px 50px 0px;
+    margin-right: 12px;
+    padding-right: 4px;
+        border-top: 2px solid #9677aa;     /* Только сверху */
+    border-bottom: 2px solid #9677aa;  /* Снизу — пунктир */
+    border-right: 2px solid #9677aa;  /* Снизу — пунктир */
+    border-left: none;    
+}
+
+#custom-l_end {
+    border-radius: 50px 0px 0px 50px;
+    margin-left: 12px;
+    padding-left: 4px;
+    border-top: 2px solid #9677aa;     /* Только сверху */
+    border-bottom: 2px solid #9677aa;  /* Снизу — пунктир */
+    border-left: 2px solid #9677aa;   
+    border-right: none     
+}
+
+#custom-sr_end {
+    border-radius: 0px;
+    margin-right: 12px;
+    padding-right: 4px;
+}
+
+#custom-sl_end {
+    border-radius: 0px;
+    margin-left: 12px;
+    padding-left: 4px;
+}
+
+#custom-rr_end {
+    border-radius: 0px 7px 7px 0px;
+    margin-right: 12px;
+    padding-right: 4px;
+}
+
+#custom-rl_end {
+    border-radius: 7px 0px 0px 7px;
+    margin-left: 12px;
+    padding-left: 4px;
+}
+
+#custom-nvidia_temp {
+    color: #cfcfcf;
+    background-color: rgba(19, 19, 19, 0.623); /* Тёмный полупрозрачный фон */
+    border-radius: 0px; /* Закруглённые углы */
+    padding: 0 0px; /* Отступы слева и справа */
+    margin: 6px 0px; /* Внешние отступы */
+    border: 2px solid #9677aa; 
+}
+
+#custom-stick {
+    color: #cfcfcf;
+    background-color: rgba(19, 19, 19, 0);
+    border-radius: 0px;
+    padding: 0 0px; /* Отступы слева и справа */
+    margin: 0px 0px; /* Внешние отступы */
+}
+
